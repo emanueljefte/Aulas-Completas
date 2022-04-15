@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalhando com Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <details>
+        <summary>
+            Listas Ordenadas
+        </summary>
+        <ol> <!--parâmetros: type e start-->
+            <li>Acordar
+            <li>Escovar
+            <li>Matabichar
+            <li>Vender
+            <li>Lavar roupa</li>
+            <li>Jogar</li>
+        </ol>
+    </details>
+
+    <details>    
+        <summary>Listas não Ordenadas</summary>
+        <ul type = "square"> <!--valor: circle-->
+            <li>Feijao
+            <li>Abacaxi
+            <li>Arroz
+        </ul>
+    </details>
+
+    <details>
+        <summary>Minhas linguagens Favoritas</summary>
+        <ol type="I">
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+        </ol>
+    </details>
+
+        <h2>Meus jogos favoritos</h2>
+        
+        <ol>
+            <details>
+                <summary>
+                    <li>PSP</li>
+                </summary>
+                <ul>
+                    <details>
+                        <summary>
+                            <li>NARUTO</li>
+                        </summary>
+                        <ol>
+                            <li>Naruto 2 Mugenjo</li>
+                            <li>Naruto Ultimate Ninja Impact</li>
+                            <li>Naruto Kizuna Drive</li>
+                            <li>Naruto Akatsuki Rising</li>
+                        </ol>
+                    </details>
+                    <li>3th Anniversary</li>
+                    <li>God Of War: Ghost of Sparta</li>
+                    <li>Obscure</li>
+                    <li>Gladiadores</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <li>PC</li>
+                </summary>
+                <ul>
+                    <details>
+                        <summary>
+                            <li>NARUTO</li>
+                        </summary>
+                        <ol>
+                            <li>Naruto Ultimate Ninja Storm 1 2 3</li>
+                            <li>Naruto Ultimate Ninja Storm Revolutions</li>
+                        </ol>
+                    </details>
+                    <li>Turtle Ninja</li>
+                    <li>Need For Speed</li>
+                    <li>Call Of Duty: Black Ops</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <li>Android</li>
+                </summary>
+                <ul>
+                    <li>Zenonia 3 4 5</li>
+                </ul>
+            </details>
+        </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de Estilo</dd>
+        <dt>JS</dt>
+        <dd>Linguagem de Interação</dd>
+    </dl>
+
+    <h1>Tabelas</h1>
+    <table>
+        <tr>
+            <th>JOGO</th>
+            <th>Plataforma</th>
+        </tr>
+        <tr>
+            <td>
+                Naruto: <br>
+                Ultimate Storm 1 <br>
+                Shippuden Ultimate Storm 2 <br>
+                Shippuden Ultimate Storm 3 <br>
+            </td>
+            <td>
+                Personal Computer
+            </td>
+        </tr>
+        <tr>
+            <td><span translate="no">Call Of Dutty</span> 3</td>
+            <td><span contenteditable="true">Clique para editar</span></td>
+        </tr>
+    </table>
+
+    <h1>Fórmulários</h1>
+    <section>
+        <form name="formulario" action="processar.php" method="get" autocomplete="on">
+            <progress value="30" max="100">0%</progress>
+            <p></p>
+            <meter value="60" min="0" max="100" low="40" high="80" optimum="100">60</meter>
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" maxlength="35" placeholder="Emanuel Jefté Dingani João" autofocus>
+            </p>
+            <p><label for="nascDate">Data de Nascimento: </label><input type="date" name="nascimento" id="nascDate" value="2003-04-17"></p>
+            <p>
+                <label for="idade">Idade: </label>
+                <input type="number" name="idade" id="idade" value="35" min="13" max="100" disabled>
+            </p>
+            <p><input type="range" name="idade" id="" min="13" max="100"></p>
+            <p>
+                <label for="correio">Correio: <input type="email" name="correio" id="correio"></label>
+            </p>
+            <p><input type="checkbox" name="email" id="email1" value="example@email.com" checked> <label for="email1">example@email.com</label></p>
+            
+            <p><input type="checkbox" name="email" id="email2" value="emanueljefte00@hotmail.com"> <label for="email2">emanueljefte00@hotmail.com</label></p>
+
+            <p><input type="checkbox" name="email" id="email3" value="emanueldingtanijoao13@gmail.com" checked> <label for="email3">emanueldingtanijoao13@gmail.com</label></p>
+            <datalist id="telefones">
+                <option value="939200238" label="Emanuel Jefté"></option>
+                <option value="931725665" label="Graciana João"></option>
+                <option value="923808070" label="Diassonama João"></option>
+            </datalist>
+            <p>
+                <label for="tel">Telefone: <input type="tel" name="telefone" id="tel" list="telefones" pattern="[0-9]{9}" title="Seu número Pessoal"></label>
+            </p>
+            <p><input type="radio" name="telefone" id="telefone1" value="939200238" checked> <label for="telefone1">939200238</label></p>
+            
+            <p><input type="radio" name="telefone" id="telefone2" value="939191675"> <label for="telefone2">939191675</label></p>
+
+            <p><input type="radio" name="telefone" id="telefone3" value="931725665"> <label for="telefone3">931725665</label></p>
+            <p>
+                <label for="url">Site web: <input type="url" name="siteweb" id="url"></label>
+            </p>
+            <p><label for="cor">Escolha a cor: </label><input type="color" name="cor" id="cor" value="#1B2B3B"></p>
+
+            <p>
+                <label for="colecao">Livros:</label>
+                <select name="livros" id="colecao" required>
+                    <option value="1">Armadilhas da Mente</option>
+                    <option value="2">Só para Jovens</option>
+                    <option value="3">12 Semanas para Ser Feliz</option>
+                    <option value="4">História da Humanidade</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="txt">Mensagem: </label>
+                <textarea name="msg" id="txt" cols="60" rows="10"></textarea>
+            </p>
+
+            <p><input type="submit" value="Enviar"></p>
+            <p><input type="image" src="folder (3).ico" width="50px" alt="Enviar porra"></p>
+            <p><button type="submit">Enviar Formulário</button></p>
+        </form>
+    </section>
+</body>
+</html>
